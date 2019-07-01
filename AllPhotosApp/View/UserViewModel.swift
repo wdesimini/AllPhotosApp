@@ -9,6 +9,7 @@
 import Foundation
 import FBSDKCoreKit
 import FBSDKLoginKit
+import RealmSwift
 
 
 protocol UserViewModelDelegate: class {
@@ -24,15 +25,49 @@ class UserViewModel {
     
     weak var delegate: UserViewModelDelegate?
     
-    public func fetchFacebookPhotos(completion: @escaping (Bool) -> Void) {
+    private let realm = try! Realm()
+    private lazy var realmPhotos = realm.objects(RealmPhoto.self)
+    
+    public func fetchUserPhotos(completion: @escaping (Bool) -> Void) {
+        if realmPhotos.count != 0 {
+            updateUserPhotos(to: realmPhotos.map { $0.photo })
+            completion(true)
+        } else {
+            fetchFacebookPhotos { success in
+                completion(success)
+            }
+        }
+    }
+    
+    private func fetchFacebookPhotos(completion: @escaping (Bool) -> Void) {
         FacebookGetter.fetchPhotos { photos in
             guard photos != nil else {
                 completion(false)
                 return
             }
             
-            self.updateUserPhotos(to: photos!)
+//            self.updateUserPhotos(to: photos!)
+            self.writePhotosToRealm(photos!)
             completion(true)
+        }
+    }
+    
+    private func writePhotosToRealm(_ photos: [Photo]) {
+        try! realm.write {
+            realm.add(
+                photos.map {
+                    let realmPhoto = RealmPhoto()
+                    if let pngData = $0.image.pngData() {
+                        realmPhoto.imageData = NSData(data: pngData)
+                    } else {
+                        realmPhoto.imageData = NSData(data: $0.image.jpegData(compressionQuality: 0.9)!)
+                    }
+                    realmPhoto.mediaSourceString = $0.mediaSource?.rawValue
+                    return realmPhoto
+                }
+            )
+            
+            updateUserPhotos(to: realmPhotos.map { $0.photo })
         }
     }
     
@@ -41,4 +76,3 @@ class UserViewModel {
         delegate?.updated(user: user)
     }
 }
-

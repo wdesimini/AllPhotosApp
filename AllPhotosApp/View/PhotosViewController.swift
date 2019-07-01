@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import RealmSwift
 
 class PhotosViewController: UIViewController {
     private var user = User()
@@ -17,6 +18,8 @@ class PhotosViewController: UIViewController {
     private var images: [UIImage] {
         return user.photos.map { $0.image }
     }
+    
+    private let realm = try! Realm()
     
     private lazy var activityIndicator: LoadingView = {
         let loadingView = LoadingView()
@@ -47,14 +50,15 @@ class PhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureInitialViews()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     private func configureInitialViews() {
-        activityIndicator.startAnimating()
         userViewModel.delegate = self
         
         if AccessToken.current != nil {
-            userViewModel.fetchFacebookPhotos { success in
+            activityIndicator.startAnimating()
+            userViewModel.fetchUserPhotos { success in
                 self.activityIndicator.stopAnimating()
             }
         } else {

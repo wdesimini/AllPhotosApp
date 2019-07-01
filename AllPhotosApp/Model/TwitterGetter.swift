@@ -11,6 +11,7 @@ import Foundation
 
 struct TwitterGetter: SocialMediaGetter {
     static func fetchPhotos(completion: @escaping ([Photo]?) -> Void) {
+        #warning("Twitter tbd...")
         completion(nil)
     }
 }

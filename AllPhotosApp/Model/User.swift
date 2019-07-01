@@ -15,4 +15,3 @@ class User {
     var lastName: String!
     var photos = [Photo]()
 }
-

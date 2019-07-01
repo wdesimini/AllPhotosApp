@@ -9,7 +9,7 @@
 import Foundation
 
 
-enum SocialMediaService {
+enum SocialMediaService: String {
     case facebook
     case twitter
 }

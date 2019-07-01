@@ -13,4 +13,17 @@ import UIKit
 struct Photo {
     var mediaSource: SocialMediaService?
     var image: UIImage!
+    
+    init(mediaSource: SocialMediaService? = nil, image: UIImage) {
+        self.mediaSource = mediaSource
+        self.image = image
+    }
+    
+    init(mediaSourceString: String?, imageData: NSData) {
+        if mediaSourceString != nil {
+            self.mediaSource = SocialMediaService(rawValue: mediaSourceString!)
+        }
+        
+        self.image = UIImage(data: imageData as Data)
+    }
 }

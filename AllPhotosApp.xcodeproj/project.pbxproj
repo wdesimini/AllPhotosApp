@@ -23,6 +23,7 @@
 		CF632FF122C9319F00DC3A2E /* SocialMediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FF022C9319F00DC3A2E /* SocialMediaService.swift */; };
 		CF632FF322C9351A00DC3A2E /* TwitterGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FF222C9351A00DC3A2E /* TwitterGetter.swift */; };
 		CF632FF522C9354C00DC3A2E /* FacebookGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FF422C9354C00DC3A2E /* FacebookGetter.swift */; };
+		CFB7CED522C9D2AE009F151E /* RealmPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB7CED422C9D2AE009F151E /* RealmPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		CF632FF022C9319F00DC3A2E /* SocialMediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaService.swift; sourceTree = "<group>"; };
 		CF632FF222C9351A00DC3A2E /* TwitterGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterGetter.swift; sourceTree = "<group>"; };
 		CF632FF422C9354C00DC3A2E /* FacebookGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookGetter.swift; sourceTree = "<group>"; };
+		CFB7CED422C9D2AE009F151E /* RealmPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPhoto.swift; sourceTree = "<group>"; };
 		F7235FA6EAB210C0CCD546B7 /* Pods_AllPhotosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllPhotosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				CF632FE822C92AE800DC3A2E /* User.swift */,
 				CF632FF022C9319F00DC3A2E /* SocialMediaService.swift */,
 				CF632FEA22C92F6000DC3A2E /* Photo.swift */,
+				CFB7CED422C9D2AE009F151E /* RealmPhoto.swift */,
 				CF632FEE22C9318900DC3A2E /* SocialMediaGetter.swift */,
 				CF632FF422C9354C00DC3A2E /* FacebookGetter.swift */,
 				CF632FF222C9351A00DC3A2E /* TwitterGetter.swift */,
@@ -223,9 +226,8 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -234,9 +236,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -278,6 +279,7 @@
 				CF632FF522C9354C00DC3A2E /* FacebookGetter.swift in Sources */,
 				CF632FF322C9351A00DC3A2E /* TwitterGetter.swift in Sources */,
 				CF632FF122C9319F00DC3A2E /* SocialMediaService.swift in Sources */,
+				CFB7CED522C9D2AE009F151E /* RealmPhoto.swift in Sources */,
 				CF592D1722C9844900A69DCA /* ImageCollectionViewCell.swift in Sources */,
 				CF592D1D22C9AAC600A69DCA /* Extensions.swift in Sources */,
 				CF632FEF22C9318900DC3A2E /* SocialMediaGetter.swift in Sources */,
@@ -445,12 +447,6 @@
 					"\"FBSDKLoginKit\"",
 					"-framework",
 					"\"FBSDKShareKit\"",
-					"-framework",
-					"\"FacebookCore\"",
-					"-framework",
-					"\"FacebookLogin\"",
-					"-framework",
-					"\"FacebookShare\"",
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WilsonDesimini.AllPhotosApp;
@@ -480,12 +476,6 @@
 					"\"FBSDKLoginKit\"",
 					"-framework",
 					"\"FBSDKShareKit\"",
-					"-framework",
-					"\"FacebookCore\"",
-					"-framework",
-					"\"FacebookLogin\"",
-					"-framework",
-					"\"FacebookShare\"",
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WilsonDesimini.AllPhotosApp;
