@@ -46,7 +46,6 @@ class UserViewModel {
                 return
             }
             
-//            self.updateUserPhotos(to: photos!)
             self.writePhotosToRealm(photos!)
             completion(true)
         }
@@ -74,5 +73,10 @@ class UserViewModel {
     private func updateUserPhotos(to photos: [Photo]) {
         user.photos = photos
         delegate?.updated(user: user)
+    }
+    
+    #warning("for UNITTESTING: comment this out if not testing")
+    func getRealmPhotos() -> Results<RealmPhoto> {
+        return realmPhotos
     }
 }

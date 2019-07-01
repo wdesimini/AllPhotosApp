@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-struct Photo {
+struct Photo: Equatable {
     var mediaSource: SocialMediaService?
     var image: UIImage!
     
@@ -25,5 +25,9 @@ struct Photo {
         }
         
         self.image = UIImage(data: imageData as Data)
+    }
+    
+    static func == (lhs: Photo, rhs: Photo) -> Bool {
+        return lhs.image.isEqualToImage(image: rhs.image) && lhs.mediaSource == rhs.mediaSource
     }
 }
