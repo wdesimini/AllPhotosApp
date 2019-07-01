@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74B84ABA6E053B5A654CD3F9 /* Pods_AllPhotosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7235FA6EAB210C0CCD546B7 /* Pods_AllPhotosApp.framework */; };
+		CF592D1722C9844900A69DCA /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF592D1622C9844900A69DCA /* ImageCollectionViewCell.swift */; };
+		CF592D1D22C9AAC600A69DCA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF592D1C22C9AAC600A69DCA /* Extensions.swift */; };
+		CF592D1F22C9BC2700A69DCA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF592D1E22C9BC2700A69DCA /* LoadingView.swift */; };
 		CF632FD722C92ADD00DC3A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FD622C92ADD00DC3A2E /* AppDelegate.swift */; };
-		CF632FD922C92ADD00DC3A2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FD822C92ADD00DC3A2E /* ViewController.swift */; };
+		CF632FD922C92ADD00DC3A2E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FD822C92ADD00DC3A2E /* PhotosViewController.swift */; };
 		CF632FDC22C92ADD00DC3A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF632FDA22C92ADD00DC3A2E /* Main.storyboard */; };
 		CF632FDE22C92AE000DC3A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF632FDD22C92AE000DC3A2E /* Assets.xcassets */; };
 		CF632FE122C92AE000DC3A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF632FDF22C92AE000DC3A2E /* LaunchScreen.storyboard */; };
+		CF632FE922C92AE800DC3A2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FE822C92AE800DC3A2E /* User.swift */; };
+		CF632FEB22C92F6000DC3A2E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FEA22C92F6000DC3A2E /* Photo.swift */; };
+		CF632FED22C9317500DC3A2E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FEC22C9317500DC3A2E /* UserViewModel.swift */; };
+		CF632FEF22C9318900DC3A2E /* SocialMediaGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FEE22C9318900DC3A2E /* SocialMediaGetter.swift */; };
+		CF632FF122C9319F00DC3A2E /* SocialMediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FF022C9319F00DC3A2E /* SocialMediaService.swift */; };
+		CF632FF322C9351A00DC3A2E /* TwitterGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FF222C9351A00DC3A2E /* TwitterGetter.swift */; };
+		CF632FF522C9354C00DC3A2E /* FacebookGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF632FF422C9354C00DC3A2E /* FacebookGetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CBF7EAB46B8E0906329A117 /* Pods-AllPhotosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllPhotosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllPhotosApp/Pods-AllPhotosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB32CD3999EDBF1B1C6800B /* Pods-AllPhotosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllPhotosApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllPhotosApp/Pods-AllPhotosApp.release.xcconfig"; sourceTree = "<group>"; };
+		CF592D1622C9844900A69DCA /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF592D1C22C9AAC600A69DCA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CF592D1E22C9BC2700A69DCA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CF632FD322C92ADD00DC3A2E /* AllPhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllPhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF632FD622C92ADD00DC3A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF632FD822C92ADD00DC3A2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF632FD822C92ADD00DC3A2E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		CF632FDB22C92ADD00DC3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF632FDD22C92AE000DC3A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF632FE022C92AE000DC3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF632FE222C92AE000DC3A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF632FE822C92AE800DC3A2E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CF632FEA22C92F6000DC3A2E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		CF632FEC22C9317500DC3A2E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CF632FEE22C9318900DC3A2E /* SocialMediaGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaGetter.swift; sourceTree = "<group>"; };
+		CF632FF022C9319F00DC3A2E /* SocialMediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaService.swift; sourceTree = "<group>"; };
+		CF632FF222C9351A00DC3A2E /* TwitterGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterGetter.swift; sourceTree = "<group>"; };
+		CF632FF422C9354C00DC3A2E /* FacebookGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookGetter.swift; sourceTree = "<group>"; };
+		F7235FA6EAB210C0CCD546B7 /* Pods_AllPhotosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllPhotosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B84ABA6E053B5A654CD3F9 /* Pods_AllPhotosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006E5043C3624AAD23A2F68C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7235FA6EAB210C0CCD546B7 /* Pods_AllPhotosApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FE0F4AD234CBBE0070B943D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CBF7EAB46B8E0906329A117 /* Pods-AllPhotosApp.debug.xcconfig */,
+				CBB32CD3999EDBF1B1C6800B /* Pods-AllPhotosApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF592D1822C9A82600A69DCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF632FE822C92AE800DC3A2E /* User.swift */,
+				CF632FF022C9319F00DC3A2E /* SocialMediaService.swift */,
+				CF632FEA22C92F6000DC3A2E /* Photo.swift */,
+				CF632FEE22C9318900DC3A2E /* SocialMediaGetter.swift */,
+				CF632FF422C9354C00DC3A2E /* FacebookGetter.swift */,
+				CF632FF222C9351A00DC3A2E /* TwitterGetter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF592D1922C9A83600A69DCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF632FEC22C9317500DC3A2E /* UserViewModel.swift */,
+				CF632FD822C92ADD00DC3A2E /* PhotosViewController.swift */,
+				CF592D1622C9844900A69DCA /* ImageCollectionViewCell.swift */,
+				CF592D1E22C9BC2700A69DCA /* LoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF592D2022C9C17200A69DCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF592D1C22C9AAC600A69DCA /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CF632FCA22C92ADD00DC3A2E = {
 			isa = PBXGroup;
 			children = (
 				CF632FD522C92ADD00DC3A2E /* AllPhotosApp */,
 				CF632FD422C92ADD00DC3A2E /* Products */,
+				4FE0F4AD234CBBE0070B943D /* Pods */,
+				006E5043C3624AAD23A2F68C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				CF632FD622C92ADD00DC3A2E /* AppDelegate.swift */,
-				CF632FD822C92ADD00DC3A2E /* ViewController.swift */,
+				CF592D2022C9C17200A69DCA /* Resources */,
+				CF592D1822C9A82600A69DCA /* Model */,
+				CF592D1922C9A83600A69DCA /* View */,
 				CF632FDA22C92ADD00DC3A2E /* Main.storyboard */,
 				CF632FDD22C92AE000DC3A2E /* Assets.xcassets */,
 				CF632FDF22C92AE000DC3A2E /* LaunchScreen.storyboard */,
@@ -71,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF632FE522C92AE000DC3A2E /* Build configuration list for PBXNativeTarget "AllPhotosApp" */;
 			buildPhases = (
+				788EB4D696A9F3805D54620A /* [CP] Check Pods Manifest.lock */,
 				CF632FCF22C92ADD00DC3A2E /* Sources */,
 				CF632FD022C92ADD00DC3A2E /* Frameworks */,
 				CF632FD122C92ADD00DC3A2E /* Resources */,
+				3C6333F6651487AC74D5F53F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +210,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C6333F6651487AC74D5F53F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AllPhotosApp/Pods-AllPhotosApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllPhotosApp/Pods-AllPhotosApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		788EB4D696A9F3805D54620A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AllPhotosApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF632FCF22C92ADD00DC3A2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF632FD922C92ADD00DC3A2E /* ViewController.swift in Sources */,
+				CF632FEB22C92F6000DC3A2E /* Photo.swift in Sources */,
+				CF632FD922C92ADD00DC3A2E /* PhotosViewController.swift in Sources */,
 				CF632FD722C92ADD00DC3A2E /* AppDelegate.swift in Sources */,
+				CF632FF522C9354C00DC3A2E /* FacebookGetter.swift in Sources */,
+				CF632FF322C9351A00DC3A2E /* TwitterGetter.swift in Sources */,
+				CF632FF122C9319F00DC3A2E /* SocialMediaService.swift in Sources */,
+				CF592D1722C9844900A69DCA /* ImageCollectionViewCell.swift in Sources */,
+				CF592D1D22C9AAC600A69DCA /* Extensions.swift in Sources */,
+				CF632FEF22C9318900DC3A2E /* SocialMediaGetter.swift in Sources */,
+				CF632FED22C9317500DC3A2E /* UserViewModel.swift in Sources */,
+				CF592D1F22C9BC2700A69DCA /* LoadingView.swift in Sources */,
+				CF632FE922C92AE800DC3A2E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +427,7 @@
 		};
 		CF632FE622C92AE000DC3A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBF7EAB46B8E0906329A117 /* Pods-AllPhotosApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +436,22 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"FacebookCore\"",
+					"-framework",
+					"\"FacebookLogin\"",
+					"-framework",
+					"\"FacebookShare\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WilsonDesimini.AllPhotosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +462,7 @@
 		};
 		CF632FE722C92AE000DC3A2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB32CD3999EDBF1B1C6800B /* Pods-AllPhotosApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +471,22 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"FacebookCore\"",
+					"-framework",
+					"\"FacebookLogin\"",
+					"-framework",
+					"\"FacebookShare\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WilsonDesimini.AllPhotosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
